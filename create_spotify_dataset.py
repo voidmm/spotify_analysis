@@ -140,7 +140,7 @@ class createSpotifyDataset():
            
         Returns
         ----------
-        track_ids : list of track features 
+        playlist : list of all track audio features of one playlist with the additionally provided feature
         
         '''
         try:
