@@ -1,6 +1,6 @@
 Spotify Analysis with spotipy and plotly
 =========
-Spotify provides a Web API: https://developer.spotify.com/documentation/web-api making it possible to analyze metadeta among providing many other functionalities. To perform the analysis in Python, spotipy was used to collect data over the Spotify API.
+Spotify provides a Web API: https://developer.spotify.com/documentation/web-api making it possible to analyze metadeta among providing many other functionalities. To perform the analysis of song audio features in Python, spotipy was used to collect data over the Spotify API.
 
 The aim of this analysis was to 
 1. Create a dataset from Spotify playlists that contain the most popular tracks of each decade, starting from the 1950s
