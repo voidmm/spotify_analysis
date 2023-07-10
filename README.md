@@ -1,6 +1,6 @@
 Spotify Analysis with spotipy and plotly
 =========
-Spotify provides a Web API: https://developer.spotify.com/documentation/web-api making it possible to analyze metadeta among providing many other functionalities. To perform the analysis of song audio features in Python, spotipy was used to collect data over the Spotify API.
+Spotify provides a Web API: https://developer.spotify.com/documentation/web-api making it possible to analyze metadeta among providing many other functionalities. To perform the analysis of song audio features in Python, Spotipy was used to collect data over the Spotify API.
 
 The aim of this analysis was to 
 1. Create a dataset from Spotify playlists that contain the most popular tracks of each decade, starting from the 1950s
@@ -9,7 +9,7 @@ The aim of this analysis was to
 
 Spotify API credentials
 ---------
-To use the Spotify API, you will need to authorize yourself and of course be an active Spotify user with a respective User ID. Spotipy makes it pretty easy with its Authorization Code flow. You can set your credentials as environment variables or set them in a separate python file. 
+To use the Spotify API, you will need to authorize yourself and of course be an active Spotify user with a respective User ID. Spotipy makes it pretty easy with its Authorization Code flow. You can set your credentials as environment variables or set them in a separate Python file. 
 The necessary authorization parameters you will need to set are the following:
 
 client_id=''
@@ -17,8 +17,8 @@ client_secret=''
 redirect_url=''
 user=''
 
-Please adjust it in the cred.py file and checkout spotipys documentation: https://spotipy.readthedocs.io/en/2.6.3/#authorization-code-flow
-for the authorization code flow.
+Please adjust it in the cred.py file and checkout Spotipys documentation: https://spotipy.readthedocs.io/en/2.6.3/#authorization-code-flow
+for more info on the authorization code flow.
 
 Build the Dataset
 ---------
@@ -26,10 +26,10 @@ With the create_spotify_dataset module you can collect Spotify track audio featu
 
 Example:
 
-    #Intantiate the SpotifyOAuth class to authenticate requests
+    #Instantiate the SpotifyOAuth class to authenticate requests
     sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=cred.client_id, client_secret=cred.client_secret, redirect_uri=cred.redirect_url),requests_timeout=10, retries=10)
     
-    #Intantiate the createSpotifyDataset class with 
+    #Instantiate the createSpotifyDataset class with 
     spotify = 
     csp.createSpotifyDataset(
         csv_directory=Path("<path-where-the-resulting-csv-file-should-be-saved-to>"), csv_name='<name-of-csv-file>', spotify_auth=sp, user_id=cred.user)
@@ -42,7 +42,7 @@ Example:
 See more examples in main.py
 
 More information about track audio features: https://developer.spotify.com/documentation/web-api/reference/get-audio-features
-More information about spotipy: https://spotipy.readthedocs.io/en/2.22.1/?highlight=user_playlist#
+More information about Spotipy: https://spotipy.readthedocs.io/en/2.22.1/?highlight=user_playlist#
 
 Leverage Spotify playlists
 ---------
@@ -51,7 +51,7 @@ While some of the features (e.g. genres) can be collected with the Spotify API w
 dimension allows you to analyze the characteristics of the catalogue on an even borader spectrum.
 
 In the example analysis, the audio features categorized by decades were analyzed. You could also analyze:
-- Your music taste vs. a friends by comparing your Spotify Best of playlists
+- Your music taste vs. a friends by comparing your Spotify "Best Of" playlists
 - Bands by comparing the "This is" playlist Spotify curates
 - Chart playlists of different countries
 
@@ -71,6 +71,6 @@ year_features: Is the aggregated dataset that contains the mean and standard dev
 
 Analyze the dataset with Plotly
 ---------
-The Plotly analysis was done in a Jupyter Notebook and is supposed to offer an example of how plotly can be leveraged to analyze Spotify audio features.
+The Plotly analysis was done in a Jupyter Notebook and is supposed to offer an example of how Plotly can be leveraged to analyze Spotify audio features.
 
 
