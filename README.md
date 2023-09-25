@@ -67,6 +67,7 @@ Dataset specifications
 The dataset consisting of audio track features with the additional decade feature is part of this Project and can be downloaded for a subsequent analysis (check the "csv" folder).
 
 spotify_decades_dataset: Is the original dataset that was created and can be found in the csv folder, listing all parsed track information
+
 year_features: Is the aggregated dataset that contains the mean and standard deviation of each year, beginning at 1970 (no year-specific playlist are available for years prior to that)
 
 Analyze the dataset with Plotly
