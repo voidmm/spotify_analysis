@@ -12,10 +12,10 @@ Spotify API credentials
 To use the Spotify API, you will need to authorize yourself and of course be an active Spotify user with a respective User ID. Spotipy makes it pretty easy with its Authorization Code flow. You can set your credentials as environment variables or set them in a separate Python file. 
 The necessary authorization parameters you will need to set are the following:
 
-client_id=''
-client_secret=''
-redirect_url=''
-user=''
+    client_id=''
+    client_secret=''
+    redirect_url=''
+    user=''
 
 Please adjust it in the cred.py file and checkout Spotipys documentation: https://spotipy.readthedocs.io/en/2.6.3/#authorization-code-flow
 for more info on the authorization code flow.
